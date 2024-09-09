@@ -1,0 +1,69 @@
+body {
+    background-image: url('../Images/treston-vantage-front-3.jpg'); /* Correct relative path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background stay in place when scrolling */
+    background-position: center center; /* Centers the background image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-box {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%); /* Darker background fading to transparent */
+    color: #fff; /* Ensures text is readable on the dark background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px;
+    width: 50%; /* Cover left part of the screen */
+    max-width: 800px; /* Maximum width of the container */
+    position: absolute; /* Positioned relative to the body */
+    top: 20px; /* Adjust top spacing if needed */
+    left: 0; /* Align to the left edge */
+    z-index: 1; /* Ensure it is above other content */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
