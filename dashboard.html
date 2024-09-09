@@ -13,6 +13,11 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
+                <li class="nav-logo">
+                    <a href="https://hz.nl/en" target="_blank">
+                        <img src="Images/logos/hz-logo.png" alt="HZ Logo">
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -21,7 +26,101 @@
         <h1>NBSA Boundary</h1>
 
         <h2>Introduction</h2>
-        <p>Something very nice.</p>
+        <div class="course-table-container">
+            <h2>Propaedeutic Phase Courses</h2>
+        
+            <table class="course-table">
+                <thead>
+                    <tr>
+                        <th>Quarter</th>
+                        <th>Program Name</th>
+                        <th>Credit EC</th>
+                        <th>Minimum Grade</th>
+                        <th>Passed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S1 - Block 1</td>
+                        <td>Program & Career Orientation</td>
+                        <td>2.5</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="2.5"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1</td>
+                        <td>Computer Science Basics</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="5"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1</td>
+                        <td>Programming Basics</td>
+                        <td>5</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="5"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 2</td>
+                        <td>Object-Oriented Programming</td>
+                        <td>10</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="10"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 2</td>
+                        <td>Framework Project 1</td>
+                        <td>10</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="10"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1 & 2</td>
+                        <td>Personal Professional Development Exploration</td>
+                        <td>12.5</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="12.5"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1 & 2</td>
+                        <td>Business IT Consultancy Basics</td>
+                        <td>2.5</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="2.5"></td>
+                    </tr>
+                    <tr>
+                        <td>S2 - Block 1 & 2</td>
+                        <td>Framework Project 2</td>
+                        <td>10</td>
+                        <td>5.5</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="10"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1 & 2</td>
+                        <td>IT Personality 1</td>
+                        <td>1.25</td>
+                        <td>P/NP</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="1.25"></td>
+                    </tr>
+                    <tr>
+                        <td>S1 - Block 1 & 2</td>
+                        <td>IT Personality 2</td>
+                        <td>1.25</td>
+                        <td>P/NP</td>
+                        <td><input type="checkbox" class="credit-checkbox" data-credits="1.25"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Summary Section -->
+            <div class="summary">
+                <h2>Credits Summary</h2>
+                <p id="credits-summary">Total Credits Passed: <span id="total-credits">0</span> / 60</p>
+            </div>
+        </div>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
