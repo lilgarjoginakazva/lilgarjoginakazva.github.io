@@ -14,6 +14,7 @@ header {
     color: #fff;
     padding: 10px 0;
     text-align: center;
+    position: relative;
 }
 
 header img {
@@ -21,9 +22,18 @@ header img {
     height: auto;
 }
 
+nav {
+    display: flex;
+    justify-content: center; /* Center-aligns the navigation items */
+    align-items: center;
+    position: relative;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -40,10 +50,22 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+nav .nav-logo {
+    position: absolute;
+    right: 0; /* Aligns the logo to the right edge of the navigation bar */
+    margin-right: 20px; /* Adjust spacing from the right edge */
+}
+
+nav .nav-logo img {
+    height: 40px; /* Adjust the size of the logo */
+    width: auto;
+}
+
 main {
     padding: 20px;
 }
 
+/* Content Box */
 .content-box {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 70%); /* Darker background fading to transparent */
     color: #fff; /* Ensures text is readable on the dark background */
@@ -66,4 +88,67 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* Table Styles */
+.course-table-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    background-color: #000; /* Black background for all cells */
+    color: #fff; /* White text for readability */
+}
+
+.course-table th {
+    font-weight: bold;
+}
+
+.course-table tr:nth-child(even), .course-table tr:nth-child(odd) {
+    background-color: #000; /* Ensures all rows are black */
+}
+
+.course-table tr:hover {
+    background-color: #222; /* Slightly lighter black on hover */
+}
+
+/* Summary Styles */
+.summary {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#credits-summary {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#total-credits {
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#total-credits.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+#total-credits.red {
+    background-color: red;
+    color: white;
+}
+
+#total-credits.green {
+    background-color: green;
+    color: white;
 }
