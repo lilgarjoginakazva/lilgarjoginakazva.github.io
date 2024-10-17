@@ -1,77 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css">
-    <title>FAQ</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="nav-logo">
-                    <a href="https://hz.nl/en" target="_blank">
-                        <img src="Images/logos/hz-logo.png" alt="HZ Logo">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="nav-logo">
+                            <a href="https://hz.nl/en" target="_blank">
+                                <img src="Images/logos/hz-logo.png" alt="HZ Logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="left-content">
+                    <div class="content-box">
+                        <h1>Frequently Asked Questions</h1>
 
-</header> 
-<div class="content-box">
-    <h1>Frequently Asked Questions</h1>
-    
-    <div class="faq-section">
-        <h2>1. How can you print a document from your laptop at HZ?</h2>
-        <p>
-            1. <strong>Find a Printer:</strong> Locate a printer on campus that is connected to the university’s network. Printers are usually available in libraries, computer labs, and study areas.<br>
-            2. <strong>Connect to the Network Printer:</strong> Ensure your laptop is connected to the HZ network. You may need to install a printer driver or use a university-provided printing service.<br>
-            3. <strong>Print the Document:</strong> Open your document and select the “Print” option. Choose the network printer from the list of available printers. You may be required to authenticate with your student ID or login credentials to release the print job.
-        </p>
-    </div>
+                        <div class="faq-section">
+                            <h2>1. How can you print a document from your laptop at HZ?</h2>
+                            <p>
+                                To print a document from your laptop at HZ, first locate a network-connected printer on
+                                campus. Then, select the "Print" option in your
+                                document, choose the network printer, and authenticate with your student ID or login
+                                credentials to release the print job.
+                            </p>
+                        </div>
 
-    <div class="faq-section">
-        <h2>2. How can you scan a document and send it to your laptop at HZ?</h2>
-        <p>
-            1. <strong>Locate a Scanner:</strong> Find a scanner available on campus, typically in libraries or administrative offices.<br>
-            2. <strong>Use the Scanner:</strong> Place your document on the scanner bed and follow the on-screen instructions to scan it.<br>
-            3. <strong>Send the Document:</strong> Choose the option to send the scanned document to your email or save it to a USB drive. You can then access it from your laptop.
-        </p>
-    </div>
+                        <div class="faq-section">
+                            <h2>2. How can you scan a document and send it to your laptop at HZ?</h2>
+                            <p>
+                                To scan a document and send it to your laptop at HZ, first locate a scanner on campus,
+                                usually in libraries or administrative offices. Place your document on the scanner bed
+                                and follow the on-screen instructions. Then, select the option to email the scanned
+                                document to yourself or save it to a USB drive.
+                            </p>
+                        </div>
 
-    <div class="faq-section">
-        <h2>3. How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?</h2>
-        <p>
-            1. <strong>Visit the HZ Web Shop:</strong> Go to the HZ web shop website.<br>
-            2. <strong>Browse and Select Items:</strong> Browse through the available items or events and add them to your cart.<br>
-            3. <strong>Checkout:</strong> Proceed to the checkout page, enter your payment details, and complete the purchase. You may need to log in with your student account or create an account if you don’t have one.
-        </p>
-    </div>
+                        <div class="faq-section">
+                            <h2>3. How can I buy something (like when I sign up for the IT introduction event) on
+                                the HZ web shop?</h2>
+                            <p>
+                                To buy something on the HZ web shop, first visit the HZ web shop website. Browse the
+                                available items or events and add them to your cart. Then, proceed to checkout, enter
+                                your payment details, and complete the purchase. You may need to log in with your
+                                student account or create one if you don't have it.
+                            </p>
+                        </div>
 
-    <div class="faq-section">
-        <h2>4. How can you book a project space?</h2>
-        <p>
-            1. <strong>Access the Booking System:</strong> Visit the HZ project space booking system website or application.<br>
-            2. <strong>Select a Space:</strong> Choose a project space and date from the available options.<br>
-            3. <strong>Book the Space:</strong> Follow the instructions to complete the booking. You may need to log in with your student credentials.
-        </p>
-    </div>
+                        <div class="faq-section">
+                            <h2>4. How can you book a project space?</h2>
+                            <p>
+                                To book a project space, first access the HZ learn app. Select a space and date from the
+                                available options. Finally, follow the
+                                instructions to complete the booking, which may require logging in with your student
+                                credentials.
+                            </p>
+                        </div>
 
-    <div class="faq-section">
-        <h2>5. What are the instructions if you want to park your car at the HZ parking lot?</h2>
-        <p>
-            1. <strong>Register Your Vehicle:</strong> Ensure that your vehicle is registered with the HZ parking office if required.<br>
-            2. <strong>Find Parking:</strong> Locate the designated parking areas on the campus.<br>
-            3. <strong>Follow Parking Rules:</strong> Adhere to the parking regulations and display any required permits or passes in your vehicle.
-        </p>
+                        <div class="faq-section">
+                            <h2>5. What are the instructions if you want to park your car at the HZ parking lot?
+                            </h2>
+                            <p>
+                                To park your car at the HZ parking lot, first register your vehicle with the HZ parking
+                                office if required. Then, locate the designated parking areas on campus. Lastly, follow
+                                the parking rules and display any required permits or passes in your vehicle.
+                            </p>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="model-box">
+                        <model-viewer src="interceptor.glb" shadow-intensity="1" camera-controls touch-action="pan-y"
+                            alt="3D model of an interceptor" style="size: 200%;">
+                        </model-viewer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>Contact: <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a></p>
+        </footer>
     </div>
-    
-</div>
-<footer>
 </body>
+
 </html>
