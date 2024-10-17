@@ -1,32 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="nav-logo">
-                    <a href="https://hz.nl/en" target="_blank">
-                        <img src="Images/logos/hz-logo.png" alt="HZ Logo">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="nav-logo">
+                            <a href="https://hz.nl/en" target="_blank">
+                                <img src="Images/logos/hz-logo.png" alt="HZ Logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="left-content">
+                    <div class="content-box">
+                        <div class="flex-container">
+                            <div class="flex-item" onclick="openWindow('https://example.com')">I'm a 20-year-old 3D
+                                designer from Sofia, Bulgaria. I currently
+                                work at a French company, where I work on 3D designs and models of glasses using tools
+                                like
+                                Photoshop and Blender. My passion for design and creativity drives me to constantly
+                                learn
+                                and push the boundaries of my work, which led me to choosing to study programming here
+                                in
+                                the Netherlands. I enjoy exploring new discoveries and technologies in the
+                                virtual world.
+                            </div>
+                            <div class="flex-container">
+                                <div class="flex-item" onclick="openWindow('blogPages/blog1.html')">Window 1</div>
+                                <div class="flex-item" onclick="openWindow('blogPages/blog2.html')">Window 2</div>
+                                <div class="flex-item" onclick="openWindow('https://example.com')">Window 3</div>
+                                <div class="flex-item" onclick="openWindow('https://example.com')">Window 4</div>
+                            </div>
 
-    <div class="content-box">
-        <h1>Random</h1>
-
-        <h2>Introduction</h2>
-        <p>Something nice.</p>
-    </div>
+                            <script>
+                                function openWindow(url) {
+                                    // Open the URL in a new tab or window
+                                    window.open(url, '_blank');
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="model-box">
+                            <model-viewer src="interceptor.glb" shadow-intensity="1" camera-controls
+                                touch-action="pan-y" alt="3D model of an interceptor" style="size: 200%;">
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <p>Contact: <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a></p>
+            </footer>
+        </div>
 </body>
+
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+    </head>
+
+    <body>
+        <div id="page-container">
+            <div id="content-wrap">
+                <header>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-logo">
+                                <a href="https://hz.nl/en" target="_blank">
+                                    <img src="Images/logos/hz-logo.png" alt="HZ Logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="container">
+                    <div class="left-content">
+                        <div class="content-box">
+                            <h1>Hello World</h1>
+                            <p>My name is Martin and this is my introduction into the world of ICT and
+                                programming as a whole. I am very excited to present to you my first project,
+                                which will explain to you more about my self, my interests and what i like to
+                                do.</p>
+                            <h2>Gallery</h2>
+                            <img src="Images/photo_5990297631009653631_y.jpeg" alt="Amsterdam" width="300">
+                            <img src="Images/photo_5990297631009653632_y.jpeg" alt="Berlin" width="300">
+                            <h2>Interests</h2>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://www.healthline.com/nutrition/10-benefits-of-exercise"
+                                        target="_blank">Going to the gym</a>
+                                </li>
+                                <li>Traveling and exploring new places, especially architecture</li>
+                                <li>
+                                    <a href="https://www.alltrails.com/bulgaria" target="_blank">Hiking and and living a healthy lifestyle</a>
+                                </li>
+                                <li>Working with computers</li>
+                                <li>Creating and designing objects and ideas</li>
+                                <li>Spending time with friends</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="model-box">
+                            <model-viewer
+                                src="interceptor.glb"
+                                shadow-intensity="1"
+                                camera-controls="camera-controls"
+                                touch-action="pan-y"
+                                alt="3D model of an interceptor"
+                                style="size: 200%;"></model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <p>Contact:
+                    <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+
+</html>

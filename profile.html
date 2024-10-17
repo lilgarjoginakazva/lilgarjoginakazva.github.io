@@ -1,48 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css">
-    <title>Profile</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="profile.html">Profile</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li class="nav-logo">
-                    <a href="https://hz.nl/en" target="_blank">
-                        <img src="Images/logos/hz-logo.png" alt="HZ Logo">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li class="nav-logo">
+                            <a href="https://hz.nl/en" target="_blank">
+                                <img src="Images/logos/hz-logo.png" alt="HZ Logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="left-content">
+                    <div class="content-box">
+                        <h1>About Me</h1>
+                        <p> I'm a 20-year-old 3D designer from Sofia, Bulgaria. I currently
+                            work at a French company, where I work on 3D designs and models of glasses using tools like
+                            Photoshop and Blender. My passion for design and creativity drives me to constantly learn
+                            and push the boundaries of my work, which led me to choosing to study programming here in
+                            the Netherlands. I enjoy exploring new discoveries and technologies in the
+                            virtual world.
+                        </p>
 
-    <div class="content-box">
-        <h1>About Me</h1>
-
-        <img src="Images/AdobeStock_105451936-scaled.jpeg" alt="Profile Picture" style="width: 100%; max-width: 400px; height: auto; border-radius: 8px;">
-
-        <h2>Introduction</h2>
-        <p>Hi, my name is Martin, and I'm a 20-year-old 3D designer from Sofia, Bulgaria. I currently work at a French company, where I create innovative 3D designs and models using tools like Photoshop and Blender. My passion for design and creativity drives me to constantly learn and push the boundaries of my work. I enjoy exploring new techniques and technologies in the world of 3D design, always striving to improve my skills and deliver high-quality projects.</p>
-
-        <h2>Skills</h2>
-        <ul>
-            <li>3D Design & Modeling</li>
-            <li>Proficient in Photoshop</li>
-            <li>Blender Expertise</li>
-            <li>Creative Problem-Solving</li>
-        </ul>
-
-        <h2>Personal Philosophy</h2>
-        <p>I believe in continuous growth, both personally and professionally. Whether it's refining my design skills or learning a new language, I am always looking for ways to better myself and my work. I strive to combine creativity with technical precision, ensuring that every project I undertake reflects both passion and professionalism.</p>
-
-        <h2>Connect with Me</h2>
-        <p>Feel free to connect with me on <a href="https://www.instagram.com/mvrtn21/" target="_blank">Instagram</a> or check out my work on <a href="https://github.com/lilgarjoginakazva/lilgarjoginakazva.github.io" target="_blank">GitHub</a>.</p>
+                        <h2>My work as a 3d designer</h2>
+                        <img src="Images/cf7fa69c1d29460c96e6351f1a25383e.jpeg" alt="Blender Model 1" width="300">
+                        <img src="Images/2036525c6c4d4f7aa1efd964e6935726.jpeg" alt="Blender Model 2" width="300">
+                        <h2>Previous projects</h2>
+                        <ul>
+                            <li>Glasses</li>
+                            <li>Furniture</li>
+                            <li>Food</li>
+                            <li>Characters</li>
+                            <li>House rooms</li>
+                        </ul>
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li><a href="https://www.instagram.com/mvrtn21/" target="_blank">Instagram</a>
+                            </li>
+                            <li><a href="https://github.com/lilgarjoginakazva/lilgarjoginakazva.github.io"
+                                    target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="model-box">
+                        <model-viewer src="interceptor.glb" shadow-intensity="1" camera-controls touch-action="pan-y"
+                            alt="3D model of an interceptor" style="size: 200%;">
+                        </model-viewer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>Contact: <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a></p>
+        </footer>
     </div>
 </body>
+
 </html>
