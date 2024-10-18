@@ -7,6 +7,7 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="styles/style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
@@ -15,6 +16,11 @@
             <header>
                 <nav>
                     <ul>
+                         <li><a href="#" onclick="showSidebar()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#303038">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                        </a></li>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="profile.html">Profile</a></li>
                         <li><a href="blog.html">Blog</a></li>
@@ -27,7 +33,19 @@
                         </li>
                     </ul>
                 </nav>
+
+                <div class="sidebar">
+                    <ul>
+                        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg></a></li>  
+                        <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Git HZ</a></li>
+                        <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank"> IR of HBO-ICT</a></li>
+                        <li><a href="https://oer.hz.nl/?_gl=1*16ta67h*_gcl_au*Mjg2MjM3OTM4LjE3MjU4Njk2NDg.*_ga*ODM2NTgwMjQ0LjE3MDk3NjM2MTI.*_ga_6MYD4DVW57*MTcyOTE5NDIwNi4xNy4xLjE3MjkxOTQ0NzUuMC4wLjA." target="_blank">HZ HBO-ICT (CER)</a></li>
+                    </ul>
+                </div>
             </header>
+
             <div class="container">
                 <div class="left-content">
                     <div class="content-box">
@@ -43,6 +61,7 @@
                         <h2>My work as a 3d designer</h2>
                         <img src="Images/cf7fa69c1d29460c96e6351f1a25383e.jpeg" alt="Blender Model 1" width="300">
                         <img src="Images/2036525c6c4d4f7aa1efd964e6935726.jpeg" alt="Blender Model 2" width="300">
+                        
                         <h2>Previous projects</h2>
                         <ul>
                             <li>Glasses</li>
@@ -51,24 +70,26 @@
                             <li>Characters</li>
                             <li>House rooms</li>
                         </ul>
+
                         <h2>Contacts</h2>
                         <ul>
-                            <li><a href="https://www.instagram.com/mvrtn21/" target="_blank">Instagram</a>
-                            </li>
+                            <li><a href="https://www.instagram.com/mvrtn21/" target="_blank">Instagram</a></li>
                             <li><a href="https://github.com/lilgarjoginakazva/lilgarjoginakazva.github.io"
                                     target="_blank">Github</a></li>
                         </ul>
                     </div>
                 </div>
+
                 <div class="right-content">
                     <div class="model-box">
-                        <model-viewer src="interceptor.glb" shadow-intensity="1" camera-controls touch-action="pan-y"
+                        <model-viewer src="3dmodels/x-wing.glb" shadow-intensity="1" camera-controls touch-action="pan-y"
                             alt="3D model of an interceptor" style="size: 200%;">
                         </model-viewer>
                     </div>
                 </div>
             </div>
         </div>
+
         <footer id="footer">
             <p>Contact: <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a></p>
         </footer>

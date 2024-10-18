@@ -4,12 +4,18 @@
 <head>
     <link rel="stylesheet" href="styles/style.css">
     <title>Dashboard</title>
+    <script src="scripts.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
+                 <li><a href="#" onclick="showSidebar()">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#303038">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                    </svg>
+                </a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="profile.html">Profile</a></li>
                 <li><a href="blog.html">Blog</a></li>
@@ -22,12 +28,20 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="sidebar">
+            <ul>
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg></a></li>  
+                <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Git HZ</a></li>
+                <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank"> IR of HBO-ICT</a></li>
+                <li><a href="https://oer.hz.nl/?_gl=1*16ta67h*_gcl_au*Mjg2MjM3OTM4LjE3MjU4Njk2NDg.*_ga*ODM2NTgwMjQ0LjE3MDk3NjM2MTI.*_ga_6MYD4DVW57*MTcyOTE5NDIwNi4xNy4xLjE3MjkxOTQ0NzUuMC4wLjA." target="_blank">HZ HBO-ICT (CER)</a></li>
+            </ul>
+        </div>
     </header>
 
     <div class="content-box">
-        <h1>NBSA Boundary</h1>
-
-        <h2>Introduction</h2>
         <div class="course-table-container">
             <h2>Propaedeutic Phase Courses</h2>
 
@@ -115,7 +129,7 @@
                 </tbody>
             </table>
             <div class="summary">
-                <h2>Credits Summary</h2>
+                <h2>Credits Summary - min. 45 ECs needed to pass NBSA boundary</h2>
                 <p id="credits-summary">Total Credits Passed: <span id="total-credits">0</span> / 60</p>
             </div>
         </div>

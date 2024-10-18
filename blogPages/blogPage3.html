@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming experience</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+    <script src="../scripts.js" defer></script>
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <nav>
+                    <ul>
+                         <li><a href="#" onclick="showSidebar()">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#303038">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                        </a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../profile.html">Profile</a></li>
+                        <li><a href="../blog.html">Blog</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../dashboard.html">Dashboard</a></li>
+                        <li class="nav-logo">
+                            <a href="https://hz.nl/en" target="_blank">
+                                <img src="../Images/logos/hz-logo.png" alt="HZ Logo">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar">
+                    <ul>
+                        <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                    viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                    <path
+                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg></a></li>
+                                <li><a href="https://github.com/HZ-HBO-ICT" target="_blank">Git HZ</a></li>
+                                <li><a href="https://hz.nl/uploads/documents/1.4-Over-de-HZ/1.4.3.-Regelingen-en-documenten/OERS/2023-2024/Juli/TWE/IR-B-HBO-ICT-full-time-2023-2024-DEF.pdf" target="_blank"> IR of HBO-ICT</a></li>
+                                <li><a href="https://oer.hz.nl/?_gl=1*16ta67h*_gcl_au*Mjg2MjM3OTM4LjE3MjU4Njk2NDg.*_ga*ODM2NTgwMjQ0LjE3MDk3NjM2MTI.*_ga_6MYD4DVW57*MTcyOTE5NDIwNi4xNy4xLjE3MjkxOTQ0NzUuMC4wLjA." target="_blank">HZ HBO-ICT (CER)</a></li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="left-content">
+                    <div class="content-box">
+                        <div class="flex-container">
+                            <h2>My Programming Experience</h2>
+    <p>
+        My journey into the world of programming began in school in Bulgaria, where I was introduced to basic programming concepts. During this time, I had the opportunity to create simple websites using platforms like Wix. This not only enhanced my creativity but also provided me with a solid understanding of how websites function.
+    </p>
+    <p>
+        Additionally, I developed a basic understanding of computers, which further fueled my interest in technology. A significant milestone in my experience was building my own PC, an endeavor that deepened my appreciation for hardware and software integration.
+    </p>
+                        </div>
+                    </div>
+
+                    <div class="right-content">
+                        <div class="model-box">
+                            <model-viewer src="../3dmodels/3d_imperial_lambda_shuttle_-_star_wars_model.glb" shadow-intensity="1" camera-controls
+                                touch-action="pan-y" alt="3D model of an interceptor" style="size: 200%;">
+                            </model-viewer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer">
+                <p>Contact: <a href="mailto:martinpetrov513@gmail.com">martinpetrov513@gmail.com</a></p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

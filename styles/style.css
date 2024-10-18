@@ -92,7 +92,6 @@ nav .nav-logo img {
 .left-content {
     flex: 1;
     padding-right: 20px;
-    max-width: 800px;
 }
 
 .content-box {
@@ -116,7 +115,6 @@ nav .nav-logo img {
 
 footer {
     background-color: #050505;
-    background-color: ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -210,25 +208,94 @@ footer a {
 
 .flex-container {
     display: flexbox;
-    flex-wrap: wrap-reverse; /* Allow items to wrap to the next line */
-    justify-content: space-around; /* Distribute space between items */
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
 }
 
 .flex-item {
-    background-color: #444; /* Dark background for items */
+    background-color: #444;
     color: white;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
-    cursor: pointer; /* Show pointer cursor on hover */
-    flex: 0 0 calc(25% - 20px); /* Each item takes up 25% of the width */
-    transition: background-color 0.3s; /* Smooth background change on hover */
-    max-height: 200px; /* Set a maximum height for the items */
-    overflow: hidden; /* Hide overflow content */
-    display: flex; /* Enable flexbox for content alignment */
-    flex-direction: column; /* Stack content vertically */
+    cursor: pointer;
+    flex: 0 0 calc(25% - 20px);
+    transition: background-color 0.3s;
+    max-height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .flex-item-content {
-    overflow-y: auto; /* Allow vertical scrolling for overflow */
-    flex-grow: 1; /* Allow content to grow and fill the available space */
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    color: white;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    background-color: #666;
+}
+
+/* Model and content styling */
+.container {
+    display: flex;
+}
+
+.left-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-content {
+    flex: 1;
+}
+
+.model-box {
+    width: 100%;
 }
