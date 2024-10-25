@@ -169,21 +169,6 @@ footer {
     border-radius: 4px;
 }
 
-#total-credits.yellow {
-    background-color: yellow;
-    color: black;
-}
-
-#total-credits.red {
-    background-color: red;
-    color: white;
-}
-
-#total-credits.green {
-    background-color: green;
-    color: white;
-}
-
 .model-box {
     background-color: transparent;
     padding: 20px;
@@ -231,7 +216,6 @@ footer a {
     flex-grow: 1;
 }
 
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -252,7 +236,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Sidebar styles */
 .sidebar {
     display: none;
     position: fixed;
@@ -282,7 +265,6 @@ nav ul li a {
     background-color: #666;
 }
 
-/* Model and content styling */
 .container {
     display: flex;
 }
